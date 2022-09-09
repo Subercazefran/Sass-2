@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;1,400;1,900&display=swap');
+@import './Variable';
+@import './Index';
+@import './Menu';
+@import './Nosotros';
+@import './Sucursales';
+@import './Contacto';
+@import './Medias';
+@import './Mixin';
+
+
+* {
+    @include reset
+}

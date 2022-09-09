@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;1,400;1,900&display=swap");
+body {
+  background: linear-gradient(90deg, #9e36e3 0%, #c212b2 65%); }
+  body .donas {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "donas__carta1 donas__carta2" "donas__carta3 donas__carta4";
+    grid-gap: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    justify-items: center; }
+    body .donas .carta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      width: 80%; }
+  body .donas__div {
+    width: 100%;
+    background-color: grey;
+    border-radius: 5px; }
+    body .donas__div .donas__titulo {
+      color: pink;
+      text-align: center; }
+  body .donas__parrafo {
+    font-size: 1rem;
+    color: white;
+    padding: 5px;
+    text-align: center; }
+  body .donas__carta1 {
+    grid-area: donas__carta1; }
+  body .donas__carta2 {
+    grid-area: donas__carta2; }
+  body .donas__carta3 {
+    grid-area: donas__carta3; }
+  body .donas__carta4 {
+    grid-area: donas__carta4; }
+
+footer .foot {
+  color: white; }
+
+.tamaño, body .donas__imagenes {
+  width: 100%;
+  height: 100%; }
+
+.donas__div__nosotros {
+  width: 1080px;
+  background-color: grey;
+  border-radius: 5px; }
+
+.donas__div__nosotros {
+  width: 1080px;
+  background-color: grey;
+  border-radius: 5px; }
+
+.donas__imagenes__local {
+  width: 30%;
+  height: 30%; }
+
+.donas__div__local {
+  width: 30%;
+  background-color: grey;
+  border-radius: 5px; }
+
+.map {
+  width: 40%; }
+
+#main__contacto {
+  background-color: #f3e7e7; }
+
+@media screen and (max-width: 768px) {
+  .donas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "donas__carta1 donas__carta2" "donas__carta3 donas__carta4"; }
+  .foot {
+    text-align: center; }
+  .donas__imagenes {
+    width: 500px;
+    height: 500px; } }
+
+@media screen and (max-width: 380px) {
+  .donas {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "donas__carta1" "donas__carta2" "donas__carta3" "donas__carta4"; }
+  .foot {
+    text-align: center; }
+  .foot {
+    text-align: center;
+    margin-left: 50%; } }
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif; }

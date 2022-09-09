@@ -1,0 +1,53 @@
+@media screen and (max-width:768px) {
+    .donas{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "donas__carta1 donas__carta2"
+                             "donas__carta3 donas__carta4";
+    }
+
+    .foot{
+        text-align: center; 
+    }
+    .donas__imagenes{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+
+@media screen and (max-width:380px){
+    .donas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "donas__carta1"
+                             "donas__carta2"
+                             "donas__carta3"
+                             "donas__carta4";
+    }
+
+    .foot{
+        text-align: center; 
+    }
+
+
+    .foot{
+        text-align: center;
+        margin-left:50%;
+    }
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  }
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+ 
+ 
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { }

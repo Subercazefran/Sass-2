@@ -1,0 +1,70 @@
+body{
+    background: linear-gradient(90deg, rgba(158,54,227,1) 0%, rgba(194,18,178,1) 65%);
+    .donas{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "donas__carta1 donas__carta2"
+                             "donas__carta3 donas__carta4";
+        grid-gap: 5px;
+        margin-top: 5px;
+        border-radius: 10px;
+        justify-items:center;
+        .carta{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            width: 80%;
+        }
+    }
+    .donas__imagenes{
+        @extend .tamaño;
+    }
+
+    .donas__div{
+        width: 100%;
+        background-color: grey;
+        border-radius: 5px;
+        .donas__titulo{
+            color: pink;
+            text-align: center;
+
+        }
+    }
+    .donas__parrafo{
+        font-size: 1rem;
+        color: white;
+        padding: 5px;
+        text-align: center;
+    }
+    .donas__carta1{
+      grid-area:donas__carta1 ;
+    }
+    .donas__carta2{
+      grid-area:donas__carta2 ;
+    }
+    
+    .donas__carta3{
+     grid-area:donas__carta3 ;
+    }
+    .donas__carta4{
+      grid-area:donas__carta4 ;
+     }
+    
+
+}           
+
+footer{
+    .foot{
+        color:map-get($mapa , $key:blanco );
+    }
+}
+
+
+.tamaño{
+    width: 100%;
+    height: 100%;
+}
